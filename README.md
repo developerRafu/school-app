@@ -23,4 +23,4 @@
     ```bash
     ng serve
     ```
-  - Abra alguma browser na porta 4200
+  - Abra algum browser na porta 4200
