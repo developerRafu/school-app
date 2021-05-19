@@ -4,6 +4,8 @@
   - Nodejs 10
   - Angular CLI 10
   - JDK ou JRE 11
+  - Eclipse ou Spring tool suite
+  - Docker e Docker-compose
 # Executando a aplicação
   - Instale o MySQL server no Docker:
     ```bash
