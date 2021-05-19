@@ -1,0 +1,15 @@
+package com.rafu.school.domain;
+
+public class StudentDTO {
+	private Long id;
+	private String name;
+	private Integer idade;
+	public StudentDTO() {
+		
+	}
+	public StudentDTO(Student student) {
+		this.id = student.getId();
+		this.name = student.getName();
+		this.address = student.get
+	}
+}

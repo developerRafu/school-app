@@ -1,0 +1,19 @@
+package com.rafu.school.configs;
+
+import org.springframework.http.HttpEntity;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+@EnableWebMvc
+@AllArgsConstructor
+
+public class SecurityConfig extends WebMvcConfigurerAdapter {
+@Override
+    public void configure(HttpEntity httpSecurity) throws Exception{
+        httpSecurity.csrf().disable()
+        .authorizeRequests()
+        .antMatchers("/api1/**").permitAll()
+        .antMatchers("/api2/**").permitAll()
+        .antMatchers("/api3/**").permitAll()
+        
+}

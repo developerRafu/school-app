@@ -1,0 +1,5 @@
+package com.rafu.school.configs;
+
+public class SecurityConfig {
+
+}

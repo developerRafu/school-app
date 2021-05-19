@@ -1,0 +1,41 @@
+package com.rafu.school;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.rafu.school.domain.School;
+import com.rafu.school.domain.Student;
+import com.rafu.school.services.SchoolService;
+import com.rafu.school.services.StudentService;
+
+@SpringBootApplication
+public class SchoolApplication implements CommandLineRunner {
+	@Autowired
+	SchoolService schoolService;
+	@Autowired
+	StudentService studentService;
+
+	public static void main(String[] args) {
+		SpringApplication.run(SchoolApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		School s1 = new School(null, "Escola de Aplicação da UFPA", "Av. Perimetral, 211", "Escola mantida pela UFPA com foco em ser um modelo em ensino básico, incentivando o pensamento crítico e propagando conhecimento");
+		Student st1 = new Student(null, "Rafu", 21, s1);
+		Student st2 = new Student(null, "Bruno", 21, s1);
+		Student st3 = new Student(null, "Lucas", 21, s1);
+		Student st4 = new Student(null, "Alisson", 23, s1);
+		s1.getAlunos().addAll(Arrays.asList(st1, st2, st3, st4));
+		this.schoolService.save(s1);
+		this.studentService.save(st1);
+		this.studentService.save(st2);
+		this.studentService.save(st3);
+		this.studentService.save(st4);
+	}
+
+}

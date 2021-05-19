@@ -1,0 +1,7 @@
+package com.rafu.school.domain;
+
+public class StudentDTO {
+	private Long d;
+	private String name;
+	private String address;
+}

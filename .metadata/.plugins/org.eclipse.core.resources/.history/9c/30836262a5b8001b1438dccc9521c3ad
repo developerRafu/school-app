@@ -1,0 +1,14 @@
+package com.rafu.school.domain;
+
+public class TurmaDTO {
+	private Long id;
+	private String name;
+	
+	public TurmaDTO() {
+		
+	}
+	
+	public TurmaDTO(Turma turma) {
+		
+	}
+}
