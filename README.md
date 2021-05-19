@@ -1,5 +1,5 @@
 # SCHOOL-APP
-  Aplicação de gerenciamento de escolas, com front-end desenvolvido com Angular e Bootstrap, Back-end em terminJava/Spring e banco de dados MYSQL no docker.
+  Aplicação de gerenciamento de escolas, com front-end desenvolvido com Angular e Bootstrap, Back-end em Java/Spring e banco de dados MYSQL no docker.
 # Requisitos
   -Nodejs 10
   -Angular CLI 10
